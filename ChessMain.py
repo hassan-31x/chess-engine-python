@@ -106,15 +106,15 @@ def highlightSquares(screen,gs,validMoves,sqSelected):
 
 
 def drawGame(screen, gs,validMoves,sqSelected):
-    drawBoard(screen,0,0,squareSize)
-    highlightSquares(screen,gs,validMoves,sqSelected)
+    drawBoard(screen, 0, 0, squareSize)
+    highlightSquares(screen, gs, validMoves, sqSelected)
     drawPieces(screen, gs.board)    
 
 def drawBoard(screen, row, c, squareSize): #iterative
     if row == 8:
         return 
 
-    colors = [pygame.Color("white"), pygame.Color("cyan")] #checkbox colors
+    colors = [pygame.Color("white"), pygame.Color("gray")] #checkbox colors
 
     #draw the board alternating colors
     for col in range(c, 8):
